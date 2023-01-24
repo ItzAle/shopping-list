@@ -1,10 +1,10 @@
 .title{
-    color: white;
+    color: #006e1d;
     margin: 0;
 }
 
 .navContainer{
-    background-color: #333;
+    background-color: #EBE193;
     height: 70px;
     display: flex;
     justify-content: center;

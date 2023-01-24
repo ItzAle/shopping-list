@@ -1,0 +1,35 @@
+div{
+    
+}
+input{
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: rgb(168, 168, 168);
+    border-color: rgba(80, 80, 80, 0);
+    box-sizing: content-box;
+    width: max-content;
+    border-radius:30px; 
+    
+}
+button{
+    color: rgb(255, 255, 255);  
+    background-color: rgb(250, 150, 2); 
+    border-radius: 30px;
+    border-color: azure;
+    box-shadow: inset;
+}
+article {
+    color: rgb(39, 21, 232);
+    display: flex;
+    justify-content: center;
+    
+   
+
+}
+section{
+    display: flex;
+    justify-content: center;
+
+
+    
+}

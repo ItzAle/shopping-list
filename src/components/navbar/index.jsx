@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 export const NavBar = () => {
   return (
     <div className={styles.navContainer}>
-      <h1 className={styles.title}>Navbar</h1>
+      <h1 className={styles.title}>Shopping List </h1>
     </div>
   );
 };

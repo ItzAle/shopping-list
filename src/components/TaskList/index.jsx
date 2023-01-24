@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {v4} from 'uuid';
+import style from "./taskList.module.css"
 
 const dataBase = [
   {
@@ -46,14 +47,14 @@ export const TaskList = () => {
 
   //"HTML"
   return (
-    <div>
+    <div >
       <section>
-        <input
+        <input 
           type="text"
           value={input}
           onChange={(e) => Changehandler(e.target.value)}
         />
-        <button onClick={AddItem}>Add</button>
+        <button  onClick={AddItem}>Add</button>
       </section>
       {data.map((item) => (
         <article key={item.id}>
