@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {v4} from 'uuid';
 import style from "./taskList.module.css"
+import { AiOutlineDelete } from 'react-icons/fa';
 
 const dataBase = [
   {
@@ -47,8 +48,8 @@ export const TaskList = () => {
 
   //"HTML"
   return (
-    <div className={style.probar}>
-      <section>
+    <div className={style.listContainer}>
+      <section className={style.inputs}>
         <input 
           type="text"
           value={input}
@@ -57,7 +58,7 @@ export const TaskList = () => {
         <button  onClick={AddItem}>Add</button>
       </section>
       {data.map((item) => (
-        <article key={item.id}>
+        <article className={style.lista} key={item.id}>
           {item.title} -{" "}
           <button onClick={() => deleteById(item.id)}>Delete</button>
         </article>

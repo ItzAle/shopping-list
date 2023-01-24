@@ -1,4 +1,4 @@
-div{
+.listContainer{
     
 }
 input{
@@ -18,7 +18,7 @@ button{
     border-color: azure;
     box-shadow: inset;
 }
-article {
+.lista {
     color: rgb(39, 21, 232);
     display: flex;
     justify-content: center;
@@ -26,11 +26,7 @@ article {
    
 
 }
-section{
+.inputs{
     display: flex;
     justify-content: center;   
-}
-.probar{
-    background-color: aqua;
-
 }
