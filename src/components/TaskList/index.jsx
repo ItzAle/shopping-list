@@ -47,7 +47,7 @@ export const TaskList = () => {
 
   //"HTML"
   return (
-    <div >
+    <div className={style.probar}>
       <section>
         <input 
           type="text"

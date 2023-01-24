@@ -28,8 +28,9 @@ article {
 }
 section{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
+}
+.probar{
+    background-color: aqua;
 
-
-    
 }
