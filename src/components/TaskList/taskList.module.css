@@ -1,17 +1,21 @@
 .listContainer{
-    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
 input{
-    color: rgb(0, 0, 0);
+    color:white;
     display: flex;
     background-color: rgb(168, 168, 168);
-    border-color: rgba(80, 80, 80, 0);
+    border-color: rgb(168, 168, 168);
     box-sizing: content-box;
     width: max-content;
-    border-radius:30px; 
-    
+    border-radius:20px;
 }
 button{
+    border: 1px transparent;
+    transition: 0.4s ease;
     color: rgb(255, 255, 255);  
     background-color: rgb(250, 150, 2); 
     border-radius: 30px;
@@ -19,7 +23,8 @@ button{
     box-shadow: inset;
 }
 .lista {
-    color: rgb(39, 21, 232);
+    font-family: Poppins;
+    color: black;
     display: flex;
     justify-content: center;
     

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import {v4} from 'uuid';
 import style from "./taskList.module.css"
-import { FaBeer } from 'react-icons/fa';
+import {AiTwotoneDelete} from "react-icons/ai";
+
+
 
 const dataBase = [
   {
@@ -60,7 +62,7 @@ export const TaskList = () => {
       {data.map((item) => (
         <article className={style.lista} key={item.id}>
           {item.title} -{" "}
-          <button onClick={() => deleteById(item.id)}>Delete</button>
+          <button onClick={() => deleteById(item.id)}><AiTwotoneDelete /></button>
         </article>
       ))}
     </div>

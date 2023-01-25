@@ -1,12 +1,16 @@
-import './App.css';
-import { NavBar } from './components/navbar';
-import { TaskList } from './components/TaskList';
+import "./App.css";
+import { NavBar } from "./components/navbar";
+import { TaskList } from "./components/TaskList";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <TaskList/>
+      <div className="navbar">
+        <NavBar />
+      </div>
+      <div className="tasklist">
+        <TaskList />
+      </div>
     </div>
   );
 }
