@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {v4} from 'uuid';
 import style from "./taskList.module.css"
-import { AiOutlineDelete } from 'react-icons/fa';
+import { FaBeer } from 'react-icons/fa';
 
 const dataBase = [
   {
@@ -28,7 +28,7 @@ export const TaskList = () => {
 
   // Functions
   const deleteById = (id) => {
-    const newData = data.filter((item) => item.id != id);
+    const newData = data.filter((item) => item.id !== id);
     setData(newData);
   };
   const AddItem = () => {
