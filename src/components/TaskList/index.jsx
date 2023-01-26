@@ -59,7 +59,7 @@ export const TaskList = () => {
   //"HTML"
   return (
     <div className={style.listContainer}>
-      <section className={style.inputs}>
+          <section className={style.inputs}>
         <input 
           type="text"
           value={input}
@@ -67,6 +67,7 @@ export const TaskList = () => {
         />
         <button  onClick={AddItem}>Add</button>
       </section>
+
       {data.map((item) => (
         <Task item={item} deleteById={deleteById} updateItem={updateItem} />
       ))}

@@ -7,11 +7,14 @@
 input{
     color:black;
     display: flex;
-    background-color: rgb(168, 168, 168);
+    background-color: #EBE193;
     border-color: rgb(168, 168, 168);
     box-sizing: content-box;
     width: max-content;
     border-radius:20px;
+    border: solid #EBE193;
+    font-family: 'poppins';
+    font-size: 20px;
 }
 button{
     border: 1px transparent;

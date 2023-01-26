@@ -18,13 +18,13 @@ export const Task = ({ item, deleteById, updateItem }) => {
     };
 
     updateItem(itemToUpdate);
-    setInput(item.title);
     setIsEditMode(false);
 
   };
 
   return (
     <section className={style.section}>
+    <div className={style.list}>
     <article key={item.id} className={item.isDone ? "isDone" : "isNotDone"}>
       {!isEditMode ? (
         <div onClick={() => setIsEditMode(true)}>{item.title}</div>
@@ -40,10 +40,13 @@ export const Task = ({ item, deleteById, updateItem }) => {
           <GoCheck onClick={editConfirm} />
         </div>
       )}
-      <button onClick={() => deleteById(item.id)}>
-        <AiTwotoneDelete />
-      </button>
+
+          <button onClick={() => deleteById(item.id)}>
+          <AiTwotoneDelete />
+          </button>
+
     </article>
+    </div>
     </section>
   );
 };
