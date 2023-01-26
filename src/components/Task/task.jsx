@@ -24,11 +24,12 @@ export const Task = ({ item, deleteById, updateItem }) => {
   };
 
   return (
+    <section className={style.section}>
     <article key={item.id} className={item.isDone ? "isDone" : "isNotDone"}>
       {!isEditMode ? (
         <div onClick={() => setIsEditMode(true)}>{item.title}</div>
       ) : (
-        <div>
+        <div className={style.div} >
           <input type="text" value={input} onChange={changeItem} />
           <GoX
             onClick={() => {
@@ -43,5 +44,6 @@ export const Task = ({ item, deleteById, updateItem }) => {
         <AiTwotoneDelete />
       </button>
     </article>
+    </section>
   );
 };
