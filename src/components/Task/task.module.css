@@ -9,8 +9,13 @@ article{
     justify-content: center;
     background-color: #87E19D;
     border-radius: 150px;
+    align-items: center;
 }
 
 section{
     padding: 20px;
+}
+
+.icon{
+    color: black;
 }

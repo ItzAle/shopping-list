@@ -26,8 +26,11 @@ const confirmShop = () =>{
 
   return (
     <section className={style.section}>
+      
     <div className={style.list}>
+
     <article key={item.id} className={item.isDone ? "isDone" : "isNotDone"}>
+    <input type="checkbox" className={style.checkbox} value="Paneer" />
       {!isEditMode ? (
         <div onClick={() => setIsEditMode(true)}>{item.title}</div>
       ) : (
@@ -42,10 +45,7 @@ const confirmShop = () =>{
           <GoCheck onClick={editConfirm} />
         </div>
       )}
-      <GoCheck onClick={confirmShop} />
-          <button onClick={() => deleteById(item.id)}>
-          <AiTwotoneDelete />
-          </button>
+          <AiTwotoneDelete className={style.icon} onClick={() => deleteById(item.id)} />
 
     </article>
     </div>

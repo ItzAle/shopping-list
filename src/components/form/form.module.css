@@ -1,6 +1,5 @@
 .inputs{
     display: flex;
-    gap: -35px;
     justify-content: space-evenly;
     align-items: stretch;
 }
