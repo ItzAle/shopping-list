@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import {v4} from 'uuid';
 import style from "./taskList.module.css"
 import {AiTwotoneDelete} from "react-icons/ai";
-import { Form } from "../Form";
+import { Form } from "../form/form";
 import { Task } from "../Task/task";
-
 
 
 const dataBase = [
