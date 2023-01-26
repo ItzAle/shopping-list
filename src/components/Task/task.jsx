@@ -16,11 +16,13 @@ export const Task = ({ item, deleteById, updateItem }) => {
       title: input,
       isDone: item.isDone,
     };
-
     updateItem(itemToUpdate);
     setIsEditMode(false);
-
   };
+
+const confirmShop = () =>{
+  
+}
 
   return (
     <section className={style.section}>
@@ -40,7 +42,7 @@ export const Task = ({ item, deleteById, updateItem }) => {
           <GoCheck onClick={editConfirm} />
         </div>
       )}
-
+      <GoCheck onClick={confirmShop} />
           <button onClick={() => deleteById(item.id)}>
           <AiTwotoneDelete />
           </button>

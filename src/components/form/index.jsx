@@ -1,9 +1,11 @@
 import React from 'react'
+import style from "./form.module.css"
 
-export const Form = ({style, input, Changehandler, AddItem}) => {
+export const Form = ({input, Changehandler, AddItem}) => {
   return (
     <section className={style.inputs}>
     <input 
+      className={style.input}
       type="text"
       value={input}
       onChange={(e) => Changehandler(e.target.value)}
