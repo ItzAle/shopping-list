@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {v4} from 'uuid';
 import style from "./taskList.module.css"
 import {AiTwotoneDelete} from "react-icons/ai";
+import { Task } from "../Task/task";
 
 
 
@@ -39,15 +40,22 @@ export const TaskList = () => {
         id:v4() ,
         isDone: false
     };
-    let newData = data;
-    newData.push(newItem)
-    setData(newData)
+    // let newData = data;
+    // newData.push(newItem)
+    setData([...data, newItem])
     setInput("");
   };
   const Changehandler = (value) => {
     setInput(value);
   };
 
+
+  const updateItem = (itemToUpdate) =>{
+    const newData = data.map(item => item.id == itemToUpdate.id ? itemToUpdate: item);
+    setData(newData)
+  }
+
+  
   //"HTML"
   return (
     <div className={style.listContainer}>
@@ -60,10 +68,7 @@ export const TaskList = () => {
         <button  onClick={AddItem}>Add</button>
       </section>
       {data.map((item) => (
-        <article className={style.lista} key={item.id}>
-          {item.title} -{" "}
-          <button onClick={() => deleteById(item.id)}><AiTwotoneDelete /></button>
-        </article>
+        <Task item={item} deleteById={deleteById} updateItem={updateItem} />
       ))}
     </div>
   );

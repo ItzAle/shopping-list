@@ -1,11 +1,11 @@
-.listContainer{
+.isDone{
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex-wrap: nowrap;
 }
 input{
-    color:white;
+    color:black;
     display: flex;
     background-color: rgb(168, 168, 168);
     border-color: rgb(168, 168, 168);
@@ -17,7 +17,7 @@ button{
     border: 1px transparent;
     transition: 0.4s ease;
     color: rgb(255, 255, 255);  
-    background-color: rgb(250, 150, 2); 
+    background-color: rgba(250, 151, 2, 0.612); 
     border-radius: 30px;
     border-color: azure;
     box-shadow: inset;
@@ -34,4 +34,12 @@ button{
 .inputs{
     display: flex;
     justify-content: center;   
+}
+
+.lista{
+    display: flex;
+    gap: 5px;
+    background-color: #87e19d;
+    border-radius:20px;
+    padding: 20px;
 }
