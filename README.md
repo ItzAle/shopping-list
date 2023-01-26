@@ -1,6 +1,7 @@
-# 🛍️ Shopping List In React 
+# 🛍️ Shopping List In React ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## 💼 Brifing
 
@@ -31,9 +32,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Manipular el DOM: renders, inputs, insertar HTML a nodos, cambios de clases css…
 - Realizar Operaciones CRUD en la memoria RAM (sin persistencia)
 - Intentar usar y separar o encapsular la persistencia en una API REST (EXTRA)
-### 💻Tecnologias 
- - HTML 
- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-- CSS
-- Javascript
-- React.js
+## 💻Tecnologias 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+ ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+## 🛠️Herramientas
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
