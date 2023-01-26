@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {v4} from 'uuid';
 import style from "./taskList.module.css"
 import {AiTwotoneDelete} from "react-icons/ai";
+import { Form } from "../Form";
 import { Task } from "../Task/task";
 
 
@@ -59,15 +60,7 @@ export const TaskList = () => {
   //"HTML"
   return (
     <div className={style.listContainer}>
-          <section className={style.inputs}>
-        <input 
-          type="text"
-          value={input}
-          onChange={(e) => Changehandler(e.target.value)}
-        />
-        <button  onClick={AddItem}>Add</button>
-      </section>
-
+      <Form style={style} input={input} Changehandler={Changehandler} AddItem={AddItem} />
       {data.map((item) => (
         <Task item={item} deleteById={deleteById} updateItem={updateItem} />
       ))}
