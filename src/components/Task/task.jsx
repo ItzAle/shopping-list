@@ -19,35 +19,35 @@ export const Task = ({ item, deleteById, updateItem }) => {
     setIsEditMode(false);
   };
 
-// const confirmShop = () =>{
-  
-// }
+  // const confirmShop = () =>{
+
+  // }
 
   return (
     <section className={style.section}>
-      
-    <div className={style.list}>
-
-    <article key={item.id}>
-    <input type="checkbox" className={style.checkbox} value="Paneer" />
-      {!isEditMode ? (
-        <div onClick={() => setIsEditMode(true)}>{item.title}</div>
-      ) : (
-        <div className={style.div} >
-          <input type="text" value={input} onChange={changeItem} />
-          <GoX
-            onClick={() => {
-              setInput(item.title);
-              setIsEditMode(false);
-            }}
+      <div className={style.list}>
+        <article key={item.id}>
+          <input type="checkbox" className={style.checkbox} value="Paneer" />
+          {!isEditMode ? (
+            <div onClick={() => setIsEditMode(true)}>{item.title}</div>
+          ) : (
+            <div className={style.div}>
+              <input type="text" value={input} onChange={changeItem} />
+              <GoX
+                onClick={() => {
+                  setInput(item.title);
+                  setIsEditMode(false);
+                }}
+              />
+              <GoCheck onClick={editConfirm} />
+            </div>
+          )}
+          <AiTwotoneDelete
+            className={style.icon}
+            onClick={() => deleteById(item.id)}
           />
-          <GoCheck onClick={editConfirm} />
-        </div>
-      )}
-          <AiTwotoneDelete className={style.icon} onClick={() => deleteById(item.id)} />
-
-    </article>
-    </div>
+        </article>
+      </div>
     </section>
   );
 };

@@ -1,49 +1,46 @@
-.isDone{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-wrap: nowrap;
+.isDone {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
-input{
-    color:black;
-    display: flex;
-    background-color: #EBE193;
-    border-color: rgb(168, 168, 168);
-    box-sizing: content-box;
-    width: max-content;
-    border-radius:20px;
-    border: solid #EBE193;
-    font-family: 'poppins';
-    font-size: 20px;
+input {
+  color: black;
+  display: flex;
+  background-color: #ebe193;
+  border-color: rgb(168, 168, 168);
+  box-sizing: content-box;
+  width: max-content;
+  border-radius: 20px;
+  border: solid #ebe193;
+  font-family: "poppins";
+  font-size: 20px;
 }
-button{
-    border: 1px transparent;
-    transition: 0.4s ease;
-    color: rgb(255, 255, 255);  
-    background-color: rgba(250, 151, 2, 0.612); 
-    border-radius: 10%;
-    border-color: azure;
-    box-shadow: inset;
+button {
+  border: 1px transparent;
+  transition: 0.4s ease;
+  color: rgb(255, 255, 255);
+  background-color: rgba(250, 151, 2, 0.612);
+  border-radius: 10%;
+  border-color: azure;
+  box-shadow: inset;
 }
 .lista {
-    font-family: Poppins;
-    color: black;
-    display: flex;
-    justify-content: center;
-    
-   
-
+  font-family: Poppins;
+  color: black;
+  display: flex;
+  justify-content: center;
 }
-.inputs{
-    display: flex;
-    justify-content: center;  
-    gap: 20px;
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.lista{
-    display: flex;
-    gap: 5px;
-    background-color: #87e19d;
-    border-radius:20px;
-    padding: 20px;
+.lista {
+  display: flex;
+  gap: 5px;
+  background-color: #87e19d;
+  border-radius: 20px;
+  padding: 20px;
 }

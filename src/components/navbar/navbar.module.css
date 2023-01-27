@@ -1,15 +1,15 @@
-.title{
-    font-family: Poppins;
-    color: #000000;
-    margin: 0;
+.title {
+  font-family: Poppins;
+  color: #000000;
+  margin: 0;
 }
 
-.navContainer{
-    background-color: #EBE193;
-    border-radius: 0 0 15px 15px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
+.navContainer {
+  background-color: #ebe193;
+  border-radius: 0 0 15px 15px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
