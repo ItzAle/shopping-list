@@ -14,22 +14,21 @@ export const Task = ({ item, deleteById, updateItem }) => {
     const itemToUpdate = {
       id: item.id,
       title: input,
-      isDone: item.isDone,
     };
     updateItem(itemToUpdate);
     setIsEditMode(false);
   };
 
-const confirmShop = () =>{
+// const confirmShop = () =>{
   
-}
+// }
 
   return (
     <section className={style.section}>
       
     <div className={style.list}>
 
-    <article key={item.id} className={item.isDone ? "isDone" : "isNotDone"}>
+    <article key={item.id}>
     <input type="checkbox" className={style.checkbox} value="Paneer" />
       {!isEditMode ? (
         <div onClick={() => setIsEditMode(true)}>{item.title}</div>

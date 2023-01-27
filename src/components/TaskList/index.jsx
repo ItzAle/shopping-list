@@ -10,17 +10,14 @@ const dataBase = [
   {
     id: "1",
     title: "Manzanas",
-    isDone: false,
   },
   {
     id: "2",
     title: "Arroz",
-    isDone: false,
   },
   {
     id: "3",
     title: "Peras",
-    isDone: true,
   },
 ];
 
@@ -38,7 +35,6 @@ export const TaskList = () => {
     const newItem = {
         title : input,
         id:v4() ,
-        isDone: false
     };
     // let newData = data;
     // newData.push(newItem)
